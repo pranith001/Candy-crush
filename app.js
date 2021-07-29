@@ -14,7 +14,7 @@ const candyColors = [
     'url(images/blue-candy.png)'
   ]
 
-//create your board
+
 function createBoard() {
   for (let i = 0; i < width*width; i++) {
     const square = document.createElement('div')
@@ -28,7 +28,7 @@ function createBoard() {
 }
 createBoard()
 
-// Dragging the Candy
+
 let colorBeingDragged
 let colorBeingReplaced
 let squareIdBeingDragged
@@ -44,7 +44,7 @@ squares.forEach(square => square.addEventListener('drop', dragDrop))
 function dragStart(){
     colorBeingDragged = this.style.backgroundImage
     squareIdBeingDragged = parseInt(this.id)
-    // this.style.backgroundImage = ''
+    
 }
 
 function dragOver(e) {
